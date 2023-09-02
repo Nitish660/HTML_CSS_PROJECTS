@@ -19,18 +19,31 @@ body {
 }
 
 .nav {
-    
+
     border-bottom: 2px solid #dadadada;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.7vw 5vw;
+    padding: 2vw 5vw;
 
 }
 
 .nav-part2 {
     display: flex;
     gap: 4vw;
+}
+
+.nav button {
+
+    font-size: 1vw;
+    padding: 0.6vw 1.4vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+
+
 }
 
 .nav h2 {
@@ -47,30 +60,30 @@ body {
     display: none;
 }
 
-.content{
-     height: calc(100% - 50px);
-     width: 100%;
-     display: flex;
-     position: relative;
+.content {
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 
-.left{
+.left {
     height: 100%;
     width: 50%;
-    
+
     padding: 5vw 4vw;
 }
 
-.left h1{
+.left h1 {
     font-size: 4.2vw;
     line-height: 4.4vw;
 }
 
-.left h1 span{
+.left h1 span {
     color: #FF735C;
 }
 
-.left p{
+.left p {
     font-size: 1.2vw;
     font-weight: 600;
     color: #666;
@@ -89,12 +102,14 @@ button {
     font-weight: 700;
 
 }
-.right{
+
+.right {
     height: 100%;
     width: 45%;
-    
+
 }
-.right img{
+
+.right img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -104,15 +119,12 @@ button {
 
 @media (max-width: 600px) {
     .nav {
-        background-color: lightseagreen;
-        color: #fff;
-        padding: 0 5vw;
-        align-items: center;
+        padding: 0 6vw;
         height: 60px;
     }
 
     .nav h2 {
-        font-size: 6vw;
+        font-size: 5.1vw;
     }
 
     .nav h4 {
@@ -120,10 +132,37 @@ button {
         display: none;
     }
 
-    .nav i {
-        display: block;
-        font-size: 6vw;
-        flex-wrap: 800;
+    .nav button {
+        font-size: 1.5vw;
+        padding: 1vw 2vw;
+        background-color: #FF735C;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
 
     }
+
+    .nav i {
+        display: block;
+        font-size: 4.5vw;
+
+
+    }
+
+    .content {
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        height: 60%;
+    }.right{
+        width: 100%;
+    }
+  .left h1{
+      font-size: 8vw;
+      line-height: 8vw;
+  }
 }
