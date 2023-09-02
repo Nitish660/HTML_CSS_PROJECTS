@@ -19,17 +19,58 @@ html,body{
 .nav{
     height: 100px;
     width: 100%;
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
+    border-bottom: 2px solid #dadadada;
     align-items: center;
     justify-content: space-between;
+    padding: 0 3vw;
 
 }
 
 .nav-part2{
     display: flex;
-    background-color: aqua;
+    /*background-color: aqua;*/
     justify-content: space-between;
     align-items: center;
     gap: 4vw;
+
+    
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: 1vm;
+}
+.nav i{
+    font-size: 1.2vw;
+    flex-wrap: 800;
+    display: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .nav{
+        background-color: lightseagreen;
+        color: #fff;
+        padding: 0 5vw;
+        align-items: center;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 6vw;
+        flex-wrap: 800;
+        
+    }
 }
