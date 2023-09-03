@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(53, 150, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cointainer{
+   
+    width: 18%;
+    height: 45%;
+    background-color: white;
+    border-radius: 2.5%;
+    padding: 20px 20px;
+    text-align: center;
+    padding: 20px ;
+
+   
+}
+#cointainer h2 {
+    margin-top: 10px; /* Add margin to create space below the image and between the h2 elements */
+}
+
+
+#cointainer img{
+      height: 50%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 5px;
+}
+
+#cointainer button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove the box shadow */
+    border-radius: 10px;
+    background-color: transparent; /* Remove any background color */
+    cursor: pointer;
+}
+
+
+#cointainer h3{
+    font-size: 22px;
+    color: red;
+    margin: 10px;
+}
+#cointainer #remove{
+    background-color: aliceblue;
+}
+
+#cointainer #add{
+    background-color: rgb(100, 200, 170);
+}
