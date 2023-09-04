@@ -49,7 +49,7 @@ body {
     flex: 1;
     border-radius: 30px;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .search button{
@@ -66,5 +66,43 @@ body {
     width: 16px;
 }
 
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
+.col{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    
+}
 
+.col img{
+    margin-right: 10px;
+    width: 40px;
+}
+
+.humidity,
+.wind {
+    font-size: 16px;
+    margin-top: -10px; /* Add space between humidity and windspeed */
+}
+
+.weather h1{
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.col p{
+    color: white;
+    
+}
