@@ -117,3 +117,22 @@ ul li span:hover{
     color: #555;
     text-decoration: line-through; /* Add a line through the text */
 }
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%; /* Adjust card width for smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    .row button {
+        margin-left: 0; /* Remove left margin for the button */
+        margin-top: 10px; /* Add top margin to the button */
+    }
+}
+
+
+
+
+
