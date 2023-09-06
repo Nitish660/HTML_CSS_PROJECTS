@@ -1,8 +1,7 @@
-const inputBox = document.querySelector(".input"); // Use ".input" to select the input element
-const outputList = document.querySelector(".list-coinatiner"); // Use ".list-coinatiner" to select the list
+const inputBox = document.querySelector(".input");
+const outputList = document.querySelector(".list-coinatiner");
 
 function addTask() {
-  // Corrected the function name to "addTask"
   if (inputBox.value === "") {
     alert("Add something first");
   } else {
@@ -12,10 +11,27 @@ function addTask() {
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
     li.appendChild(span);
-    {
-      inputBox.value = "";
-    }
+    inputBox.value = "";
+    saveData();
   }
 }
 
+outputList.addEventListener("click", function (e) {
+  if (e.target.tagName === "LI") {
+    e.target.classList.toggle("checked");
+    saveData();
+  } else if (e.target.tagName === "SPAN") {
+    e.target.parentElement.remove();
+    saveData();
+  }
+});
 
+function saveData() {
+  localStorage.setItem("data", outputList.innerHTML); // Use quotes around "data"
+}
+
+function showList() {
+  outputList.innerHTML = localStorage.getItem("data"); // Use quotes around "data"
+}
+
+showList();

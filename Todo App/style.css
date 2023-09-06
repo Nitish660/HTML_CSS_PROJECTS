@@ -105,9 +105,15 @@ position: absolute;
 text-align: center;
 margin: auto;
 size: 30px;
+border-radius: 20px;
 
 }
 
 ul li span:hover{
     background: #edeef0;
+}
+
+.checked {
+    color: #555;
+    text-decoration: line-through; /* Add a line through the text */
 }
