@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +8,6 @@
 .container {
     width: 100vw;
     height: 100vh;
-
 }
 
 .navcontainer {
@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-   
 }
 
 nav {
@@ -35,13 +34,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    overflow: hidden;
 }
 
 #heading {
     font-size: 3rem;
     font-weight: bold;
     color: azure;
-
 }
 
 a {
@@ -61,7 +60,6 @@ a {
     text-align: center;
     justify-content: center;
     min-height: 30px;
-    
 }
 
 .footerbox p {
@@ -71,62 +69,91 @@ a {
 
 .contentbox {
     width: 70%;
-    margin:auto;
-    /* border: 1px solid black; */
-    /* border-color:white; */
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding:10px;
+    padding: 10px;
     box-shadow: 5px 5px 30px black;
 }
 
-.item{
+.item {
     width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 45px;
-    
-
 }
-.rightbox img{
+
+.rightbox img {
     display: flex;
-    height: 450px;
-    width: 300px;
+    height: auto;
+    max-width: 30%;
     border-radius: 10px;
     float: left;
-    
+
 }
-.leftbox{
+
+.leftbox {
     width: 100%;
     display: flex;
     flex-direction: column;
     caption-side: 20px;
 }
-.leftbox h2{
+
+.leftbox h2 {
     width: 100%;
     font-size: 2rem;
-    text-shadow: 2px 2px 8px rgba(22, 23, 24, 0.629); 
-    text-decoration:underline;
+    text-shadow: 2px 2px 8px rgba(22, 23, 24, 0.629);
+    text-decoration: underline;
     color: #122da6;
     text-align: center;
 }
-.leftbox h3{
+
+.leftbox h3 {
     width: 100%;
     font-size: 2rem;
     text-shadow: 2px 2px 8px rgb(89, 95, 109);
 }
-.ingbox{
+
+.ingbox {
     font-size: 1.3rem;
-    margin-left: 50px;
-    
+    padding-top: 30px;
+    margin-top: 50px;
 }
-.recipebox{
-    font-size: 1.1re,;
+
+.recipebox {
+    font-size: 1.1rem;
     width: 95%;
     margin-left: 30px;
 }
-li{
+
+li {
     font-weight: bold;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .contentbox {
+        width: 90%; /* Adjust content box width for smaller screens */
+    }
+
+    .rightbox img {
+        float: none; /* Remove float for images */
+        margin: 0 auto; /* Center align images */
+    }
+
+    .item {
+        flex-direction: column; /* Stack item content vertically */
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .leftbox h2 {
+        font-size: 1.8rem; /* Reduce heading font size */
+    }
+
+    .leftbox h3 {
+        font-size: 1.8rem; /* Reduce subheading font size */
+    }
 }
